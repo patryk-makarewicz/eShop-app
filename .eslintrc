@@ -23,8 +23,21 @@
       1,
       {
         "extensions": [
-          ".js"
+           ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
         ]
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
       }
     ]
   },

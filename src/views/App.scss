@@ -49,6 +49,14 @@
       transform: scale(1.1);
     }
   }
+  &__ts {
+    height: 78px;
+    margin-right: 35px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
   &__js {
     height: 80px;
     margin-right: 35px;

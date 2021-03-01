@@ -2,7 +2,7 @@
 
 # General info
 
-IN CONSTUCTION - this will be eShop app with products from fake API.
+This is my template for create-react-app with typescript, eslint, prettier, husky, netlify.
 
 ## Getting Started with Create React App
 
