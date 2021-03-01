@@ -1,5 +1,7 @@
 import React from 'react';
 
+import GlobalStyle from '../theme/GlobalStyle';
+
 import logo from '../assets/logo.svg';
 import react from '../assets/logo-react.svg';
 import ts from '../assets/logo-typescript.png';
@@ -14,6 +16,7 @@ import './App.scss';
 
 const App = () => (
   <>
+    <GlobalStyle />
     <div className="app">
       <header className="app__header">
         <p className="app__paragraph">My template for React-App with TypeScript.</p>
