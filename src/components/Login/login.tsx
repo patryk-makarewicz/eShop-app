@@ -14,11 +14,23 @@ const Login = () => {
 
   return (
     <div className={styles.wrapper}>
-      <p>Login to eShop app</p>
+      <header>
+        <h1 className={styles.title}>Login to eShop app</h1>
+      </header>
       <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-        <input name="login" ref={register({ required: true })} placeholder="Your login" />
+        <input
+          className={styles.form__input}
+          name="login"
+          ref={register({ required: true })}
+          placeholder="Your login"
+        />
         {errors.login && <span>This field is required</span>}
-        <input name="password" ref={register({ required: true })} placeholder="Your password" />
+        <input
+          className={styles.form__input}
+          name="password"
+          ref={register({ required: true })}
+          placeholder="Your password"
+        />
         {errors.password && <span>This field is required</span>}
         <input type="submit" />
       </form>

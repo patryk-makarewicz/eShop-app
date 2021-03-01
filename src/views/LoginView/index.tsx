@@ -10,7 +10,8 @@ const Wrapper = styled.div`
   padding: 10px;
   min-width: 320px;
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
+  background-color: var(--yellow);
 `;
 
 const LoginView = () => (
