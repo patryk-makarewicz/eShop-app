@@ -20,7 +20,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    color: var(--yellow);
+    color: var(--gray);
+    background-color: var(--yellow);
   }
 
   :root {
