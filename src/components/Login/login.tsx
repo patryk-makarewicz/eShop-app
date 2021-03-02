@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 import styles from './login.module.scss';
-import ButtonLogin from '../Buttons/buttonLogin';
+import ButtonMain from '../Buttons/buttonMain';
 
 type Inputs = {
   login: string;
@@ -33,7 +33,7 @@ const Login = () => {
           ref={register({ required: true })}
           placeholder="Your password"
         />
-        <ButtonLogin />
+        <ButtonMain>Login</ButtonMain>
       </form>
     </div>
   );

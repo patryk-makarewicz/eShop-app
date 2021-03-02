@@ -25,6 +25,10 @@ const Button = styled.button`
   }
 `;
 
-const ButtonLogin = () => <Button type="submit">Login</Button>;
+type Props = {
+  children: React.ReactChild;
+};
 
-export default ButtonLogin;
+const ButtonMain = ({ children }: Props) => <Button type="submit">{children}</Button>;
+
+export default ButtonMain;
