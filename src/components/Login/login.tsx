@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { useForm } from 'react-hook-form';
 
 import styles from './login.module.scss';
@@ -33,7 +35,9 @@ const Login = () => {
           ref={register({ required: true })}
           placeholder="Your password"
         />
-        <ButtonMain>Login</ButtonMain>
+        <Link to="/main">
+          <ButtonMain>Login</ButtonMain>
+        </Link>
       </form>
     </div>
   );
