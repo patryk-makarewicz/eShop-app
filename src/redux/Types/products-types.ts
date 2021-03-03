@@ -1,7 +1,11 @@
-export interface IDemoState {
+export interface IProductsState {
   products: {};
   isLoading: boolean;
   isError: boolean;
+}
+
+export interface IFetchData {
+  data: {};
 }
 
 export const FETCH_PRODUCTS_REQUESTED = 'FETCH_PRODUCTS_REQUESTED';
