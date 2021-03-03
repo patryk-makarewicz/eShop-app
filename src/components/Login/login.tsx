@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { useForm } from 'react-hook-form';
 
@@ -13,7 +12,9 @@ type Inputs = {
 
 const Login = () => {
   const { register, handleSubmit, errors } = useForm<Inputs>();
-  const onSubmit = (data: any) => console.log(data);
+  const onSubmit = (data: {}) => {
+    console.log(data);
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -35,9 +36,8 @@ const Login = () => {
           ref={register({ required: true })}
           placeholder="Your password"
         />
-        <Link to="/main">
-          <ButtonMain>Login</ButtonMain>
-        </Link>
+
+        <ButtonMain>Login</ButtonMain>
       </form>
     </div>
   );

@@ -1,12 +1,7 @@
-/* eslint-disable import/no-unresolved */
 import React, { useEffect } from 'react';
 
 import { connect } from 'react-redux';
 import { fetchProducts } from '../../redux/Actions/products-actions';
-
-// type Props = {
-//   products: {};
-// };
 
 const MainView = (props) => {
   useEffect(() => {

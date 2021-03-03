@@ -1,12 +1,13 @@
 import * as actionTypes from '../Types/products-types';
+import { IDemoState } from '../Types/products-types';
 
-const INITIAL_STATE = {
+const INITIAL_STATE: IDemoState = {
   products: [],
   isLoading: false,
   isError: false,
 };
 
-const productsReducer = (state = INITIAL_STATE, action) => {
+const productsReducer = (state: IDemoState = INITIAL_STATE, action: any): IDemoState => {
   switch (action.type) {
     case actionTypes.FETCH_PRODUCTS_REQUESTED:
       return {
