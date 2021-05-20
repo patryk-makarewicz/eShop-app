@@ -1,0 +1,107 @@
+.app {
+  text-align: center;
+  &__logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  &__header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  &__link {
+    color: #61dafb;
+  }
+  &__paragraph {
+    text-shadow: 2px 2px 2px rgb(147, 149, 151);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app__logo {
+    animation: app__logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes app__logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  &__react {
+    height: 110px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__js {
+    height: 80px;
+    margin-right: 35px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__html {
+    height: 80px;
+    margin-right: 35px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__css {
+    height: 80px;
+    margin-right: 35px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__sass {
+    height: 90px;
+    margin-right: 30px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__eslint {
+    height: 95px;
+    margin-right: 30px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__prettier {
+    height: 90px;
+    margin-right: 30px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__netlify {
+    height: 100px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

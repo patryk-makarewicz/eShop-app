@@ -2,20 +2,7 @@
 
 # General info
 
-IN CONSTUCTION - this will be eShop app with products from fake API.
-<br />
-
-## What's inside?
-
-✔ React<br />
-✔ Redux<br />
-✔ Redux Thunk<br />
-✔ TypeScript<br />
-✔ JavaScript ES6<br />
-✔ HTML5<br />
-✔ CSS3<br />
-✔ SCSS & BEM<br />
-✔ Styled-Components<br />
+This is my template for create-react-app with eslint, prettier, husky, netlify.
 
 ## Getting Started with Create React App
 

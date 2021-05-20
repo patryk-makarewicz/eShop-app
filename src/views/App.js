@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from '../redux/store';
-import GlobalStyle from '../theme/GlobalStyle';
+import GlobalStyle from 'theme/GlobalStyle';
+import store from 'redux/store';
 
 import LoginView from './LoginView';
 import MainView from './MainView';

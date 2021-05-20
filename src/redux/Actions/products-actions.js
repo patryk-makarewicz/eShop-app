@@ -1,16 +1,16 @@
+/* eslint-disable arrow-body-style */
 import * as actionTypes from '../Types/products-types';
-import { IFetchData } from '../Types/products-types';
 
 const fetchRequested = () => ({ type: actionTypes.FETCH_PRODUCTS_REQUESTED });
-const fetchSucceeded = (data: IFetchData) => ({
+const fetchSucceeded = (data) => ({
   type: actionTypes.FETCH_PRODUCTS_SUCCEEDED,
   payload: data,
 });
 const fetchFailed = () => ({ type: actionTypes.FETCH_PRODUCTS_FAILED });
 
-export const fetchProducts = () =>
+export const fetchProducts = () => {
   // eslint-disable-next-line func-names
-  function (dispatch: (arg: { type: string; payload?: any }) => void) {
+  return function (dispatch) {
     dispatch(fetchRequested());
     fetch('https://fakestoreapi.com/products/')
       .then((response) => response.json())
@@ -22,3 +22,4 @@ export const fetchProducts = () =>
         dispatch(fetchFailed());
       });
   };
+};
