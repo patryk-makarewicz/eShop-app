@@ -1,0 +1,47 @@
+@import 'theme/_variables.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.wrapper {
+  display: flex;
+  width: 500px;
+  min-width: 300px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid $color-gray;
+  box-shadow: 5px 5px 10px -5px $color-gray;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  border-right: 1px solid $color-gray;
+  padding-right: 10px;
+  &__img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
+
+  &__paragraph {
+    font-weight: $font-weight-bold;
+  }
+}

@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
 
   *, *::before, *::after {
     box-sizing: border-box;
@@ -20,12 +19,11 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    color: var(--gray);
+    color: var(--gray-dark);
     background-color: var(--yellow);
   }
 
   :root {
-    --main-blue: #1976d2;
     --gray: #939597;
     --gray-dark: #808080;
     --yellow: #F5DF4D;
