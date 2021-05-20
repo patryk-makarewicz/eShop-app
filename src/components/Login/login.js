@@ -1,21 +1,28 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
-
+import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
 import styles from './login.module.scss';
 import ButtonMain from '../Buttons/buttonMain';
 
 const Login = () => {
+  const [loggedIn, setLoggedIn] = useState(false);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  const onSubmit = (data) => {
+    console.log(data);
+    setLoggedIn(!loggedIn);
+  };
 
   return (
     <div className={styles.wrapper}>
+      {loggedIn && <Redirect to="/main" />}
       <header>
         <h1 className={styles.title}>Login to eShop App</h1>
       </header>
