@@ -17,7 +17,7 @@ const Login = () => {
   return (
     <div className={styles.wrapper}>
       <header>
-        <h1 className={styles.title}>Login to eShop-App</h1>
+        <h1 className={styles.title}>Login to eShop App</h1>
       </header>
       <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
         {errors.login && <span className={styles.form__error}>This field is required</span>}
