@@ -14,7 +14,7 @@ const MainView = (props) => {
   return (
     <div>
       {isError && <p>UPSS...PLEASE TRY AGAIN</p>}
-      {isLoading && <p>LOADING...</p>}
+      {isLoading && <p>LOADING....</p>}
       <p>MainView</p>
       {products.map((item) => (
         <Products item={item} key={item.id} />
